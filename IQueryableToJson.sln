@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQueryableToJson", "IQueryableToJson\IQueryableToJson.csproj", "{609CF066-5AC8-4ED0-959D-462CDDA8A5EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQueryableToJson.Tests", "IQueryableToJson.Tests\IQueryableToJson.Tests.csproj", "{74C97831-E129-4CCA-B049-3E63E45E51CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{609CF066-5AC8-4ED0-959D-462CDDA8A5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609CF066-5AC8-4ED0-959D-462CDDA8A5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609CF066-5AC8-4ED0-959D-462CDDA8A5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609CF066-5AC8-4ED0-959D-462CDDA8A5EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C97831-E129-4CCA-B049-3E63E45E51CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C97831-E129-4CCA-B049-3E63E45E51CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C97831-E129-4CCA-B049-3E63E45E51CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C97831-E129-4CCA-B049-3E63E45E51CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC396A90-4FC8-4FED-A27F-3D150756D592}
+	EndGlobalSection
+EndGlobal
