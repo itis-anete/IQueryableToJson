@@ -8,16 +8,11 @@ namespace IQueryableToJson
 {
 	public class JsonQueryProvider : IQueryProvider
 	{
-		public IReadOnlyDictionary<string, string> JsonSource { get; }
+		public JToken JsonSource { get; }
 
-		public JsonQueryProvider(JToken jsonObject)
+		public JsonQueryProvider(JToken jsonSource)
 		{
-			if (jsonObject == null)
-				throw new ArgumentNullException(nameof(jsonObject));
-			
-			JsonSource = jsonObject.GetAllTokens()
-				.Where(x => !x.HasValues)
-				.ToDictionary(x => x.Path, x => x.ToString());
+			JsonSource = jsonSource ?? throw new ArgumentNullException(nameof(jsonSource));
 		}
 
 		public IQueryable CreateQuery(Expression expression)
@@ -48,6 +43,6 @@ namespace IQueryableToJson
 			return (TResult)Execute(expression);
 		}
 
-		private static readonly JsonExpressionExecutor ExpressionExecutor = new JsonExpressionExecutor();
+		private static readonly JsonQueryExecutor ExpressionExecutor = new JsonQueryExecutor();
 	}
 }

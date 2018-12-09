@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JsonExpressionExecutor.cs" />
+    <Compile Include="JsonQueryExecutor.cs" />
     <Compile Include="JsonQueryProvider.cs" />
     <Compile Include="JTokenExtensions.cs" />
     <Compile Include="QueryableJson.cs" />

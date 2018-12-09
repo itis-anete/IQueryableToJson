@@ -10,6 +10,9 @@ namespace IQueryableToJson
 {
 	public class QueryableJson : IQueryable<KeyValuePair<string, string>>
 	{
+		public static KeyValuePair<string, string> All { get; }
+		public static KeyValuePair<string, string> AllFromArrays { get; }
+
 		public QueryableJson(string jsonContent)
 			: this(JsonConvert.DeserializeObject<JToken>(jsonContent)) { }
 
